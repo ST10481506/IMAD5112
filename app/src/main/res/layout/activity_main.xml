@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Matome"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plan"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mix, match and feast"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Time of the Day Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time of the day"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Dropdown for selecting time -->
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:hint="Select time"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        android:inputType="none"
+        android:focusable="true"
+        android:clickable="true" />
+
+    <!-- Show Meals Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00C8C8"
+        android:text="Show Meals"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Reset"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_outline" />
+
+    <!-- Suggested Meals -->
+    <TextView
+        android:id="@+id/suggestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested meals"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/suggestionOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
+
+
+
